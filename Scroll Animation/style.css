@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  color: black;
+  height: 100vh;
+}
+
+@keyframes jadoo {
+  from{
+      opacity: 0.5;
+      /* scale: 0.5; */
+      transform: translateX(-100px);
+  }
+  to{
+      opacity: 1;
+      /* scale: 1.2; */
+      transform: translateX(0);
+  }
+}
+
+.box{
+    border: 2px solid black;
+    margin: 10px;
+}
+.wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  animation: jadoo linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.block1 {
+    background-color: #4A90E2; /* Vivid Blue */
+    height: 200px;
+    width: 200px;
+  }
+  .block2 {
+    background-color: #D72638; /* Bold Red */
+    height: 200px;
+    width: 400px;
+  }
+  .block3 {
+    background-color: #d8c142; /* Rich Green */
+    height: 200px;
+    width: 600px;
+  }
